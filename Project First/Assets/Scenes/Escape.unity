@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 291164576}
   - component: {fileID: 291164575}
   - component: {fileID: 291164574}
+  - component: {fileID: 291164582}
   m_Layer: 0
   m_Name: Sphere (4)
   m_TagString: Untagged
@@ -284,12 +285,25 @@ Transform:
   m_GameObject: {fileID: 291164573}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.13, y: 0.64, z: 10.99}
+  m_LocalPosition: {x: 3.13, y: 0.64, z: 17.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &291164582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291164573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8357cfa3c22f854dabbf8b97e419d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyParry
+  type: 0
 --- !u!1 &335188979
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,6 +320,7 @@ GameObject:
   - component: {fileID: 335188980}
   - component: {fileID: 335188986}
   - component: {fileID: 335188987}
+  - component: {fileID: 335188988}
   m_Layer: 0
   m_Name: Sphere (3)
   m_TagString: Untagged
@@ -461,6 +476,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoRotate
   rotationSpeed: 45
+--- !u!114 &335188988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335188979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8357cfa3c22f854dabbf8b97e419d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyParry
+  type: 1
 --- !u!1 &356732994
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +505,7 @@ GameObject:
   - component: {fileID: 356732997}
   - component: {fileID: 356732996}
   - component: {fileID: 356732995}
+  - component: {fileID: 356733003}
   m_Layer: 0
   m_Name: Sphere (9)
   m_TagString: Untagged
@@ -626,12 +655,25 @@ Transform:
   m_GameObject: {fileID: 356732994}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.12, y: 0.64, z: 0.36}
+  m_LocalPosition: {x: -4.12, y: 0.64, z: 0.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &356733003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356732994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8357cfa3c22f854dabbf8b97e419d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyParry
+  type: 0
 --- !u!1 &721568508
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,7 +740,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 1f697ac0d06becf4d8965b9e5211ec1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -872,6 +914,131 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &889486133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 889486138}
+  - component: {fileID: 889486137}
+  - component: {fileID: 889486136}
+  - component: {fileID: 889486135}
+  - component: {fileID: 889486134}
+  m_Layer: 0
+  m_Name: Goal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &889486134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889486133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff9ed1d7a6897343a464dca756cb184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Goal
+--- !u!65 &889486135
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889486133}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &889486136
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889486133}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 47ac8878f13ac4144800760165e6cf47, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &889486137
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889486133}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &889486138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889486133}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.37, y: 0.76, z: 52.93}
+  m_LocalScale: {x: 12.800915, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &999965484
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +1055,7 @@ GameObject:
   - component: {fileID: 999965485}
   - component: {fileID: 999965491}
   - component: {fileID: 999965492}
+  - component: {fileID: 999965493}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -1009,7 +1177,7 @@ Transform:
   m_GameObject: {fileID: 999965484}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.13, y: 0.64, z: 5.47}
+  m_LocalPosition: {x: 3.13, y: 0.64, z: 9.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1043,6 +1211,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoRotate
   rotationSpeed: 30
+--- !u!114 &999965493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999965484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8357cfa3c22f854dabbf8b97e419d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyParry
+  type: 0
 --- !u!1 &1322883076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,6 +1239,7 @@ GameObject:
   - component: {fileID: 1322883078}
   - component: {fileID: 1322883077}
   - component: {fileID: 1322883083}
+  - component: {fileID: 1322883084}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1198,6 +1380,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoRotate
   rotationSpeed: 45
+--- !u!114 &1322883084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322883076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8357cfa3c22f854dabbf8b97e419d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyParry
+  type: 1
 --- !u!1 &1329074056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,6 +1409,7 @@ GameObject:
   - component: {fileID: 1329074059}
   - component: {fileID: 1329074058}
   - component: {fileID: 1329074057}
+  - component: {fileID: 1329074065}
   m_Layer: 0
   m_Name: Sphere (7)
   m_TagString: Untagged
@@ -1369,6 +1565,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1329074065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329074056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8357cfa3c22f854dabbf8b97e419d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyParry
+  type: 0
 --- !u!1 &1373405825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +1594,7 @@ GameObject:
   - component: {fileID: 1373405828}
   - component: {fileID: 1373405827}
   - component: {fileID: 1373405826}
+  - component: {fileID: 1373405834}
   m_Layer: 0
   m_Name: Sphere (6)
   m_TagString: Untagged
@@ -1534,12 +1744,25 @@ Transform:
   m_GameObject: {fileID: 1373405825}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.61, y: 0.64, z: 22.23}
+  m_LocalPosition: {x: -2.61, y: 0.64, z: 45.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1373405834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373405825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8357cfa3c22f854dabbf8b97e419d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyParry
+  type: 0
 --- !u!1 &1508035763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,6 +1779,7 @@ GameObject:
   - component: {fileID: 1508035766}
   - component: {fileID: 1508035765}
   - component: {fileID: 1508035764}
+  - component: {fileID: 1508035772}
   m_Layer: 0
   m_Name: Sphere (8)
   m_TagString: Untagged
@@ -1705,12 +1929,25 @@ Transform:
   m_GameObject: {fileID: 1508035763}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.77, y: 0.64, z: 28.08}
+  m_LocalPosition: {x: 2.77, y: 0.64, z: 37.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1508035772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508035763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8357cfa3c22f854dabbf8b97e419d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyParry
+  type: 0
 --- !u!1 &1578244536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,6 +1964,7 @@ GameObject:
   - component: {fileID: 1578244539}
   - component: {fileID: 1578244538}
   - component: {fileID: 1578244537}
+  - component: {fileID: 1578244545}
   m_Layer: 0
   m_Name: Sphere (5)
   m_TagString: Untagged
@@ -1882,6 +2120,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1578244545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578244536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8357cfa3c22f854dabbf8b97e419d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyParry
+  type: 0
 --- !u!1 &1863942611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2052,11 +2303,12 @@ GameObject:
   - component: {fileID: 2061819453}
   - component: {fileID: 2061819454}
   - component: {fileID: 2061819455}
-  - component: {fileID: 2061819456}
   - component: {fileID: 2061819457}
+  - component: {fileID: 2061819458}
+  - component: {fileID: 2061819459}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2121,7 +2373,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 6a42a631e7cd4924ba9b0c9aa974ba07, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2239,21 +2491,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Moving
   moveSpeed: 2
   sprintMultiplier: 2
---- !u!114 &2061819456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2061819446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29259efaa96781049bd1e8d9e56444e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMoving
-  moveSpeed: 5
-  rotationSpeed: 100
-  moveInput: {x: 0, y: 0}
 --- !u!114 &2061819457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2268,6 +2505,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerRotate
   moveSpeed: 5
   rotationSpeed: 100
+--- !u!114 &2061819458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061819446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1563e3b2edb654091baf07b4563552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  moveSpeed: 5
+  rotateSpeed: 100
+--- !u!54 &2061819459
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061819446}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2100522468
 GameObject:
   m_ObjectHideFlags: 0
@@ -2284,6 +2562,7 @@ GameObject:
   - component: {fileID: 2100522469}
   - component: {fileID: 2100522475}
   - component: {fileID: 2100522476}
+  - component: {fileID: 2100522477}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Untagged
@@ -2439,6 +2718,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoRotate
   rotationSpeed: 60
+--- !u!114 &2100522477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100522468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8357cfa3c22f854dabbf8b97e419d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyParry
+  type: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2457,3 +2749,4 @@ SceneRoots:
   - {fileID: 335188985}
   - {fileID: 1322883082}
   - {fileID: 2100522474}
+  - {fileID: 889486138}
