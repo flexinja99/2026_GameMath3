@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour
 {
-    // 플레이어가 도착 지점에 들어오면 실행
+   
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

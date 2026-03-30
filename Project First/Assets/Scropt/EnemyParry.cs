@@ -9,7 +9,7 @@ public class EnemyParry : MonoBehaviour
     private Transform player;
     private PlayerController playerScript;
 
-    // 능력치 변수들
+   
     private float viewAngle;
     private float rotationSpeed;
     private float viewDistance;

@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float rotateSpeed = 100f;
 
-    // 현재 프레임의 패링 상태
+    
     public bool isParryingLeft { get; private set; }
     public bool isParryingRight { get; private set; }
 
