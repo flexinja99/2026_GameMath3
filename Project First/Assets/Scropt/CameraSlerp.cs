@@ -7,6 +7,8 @@ public class CameraSlerp : MonoBehaviour
 
     void Update()
     {
+        if (target == null)
+            return;
         Quaternion lookRot = Quaternion.LookRotation(target.position - transform.position);
         float t = 1f - Mathf.Exp(-speed * Time.deltaTime);
         transform.rotation = ManualSlerp(transform.rotation, lookRot, t);
